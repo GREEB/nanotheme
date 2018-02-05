@@ -1,0 +1,1622 @@
+/* nano by gr44b */
+
+/* nano editables */
+
+.titlebox .redditname a:after {
+  content: " ";
+  background-image: url(%%nanologo%%);
+  height: 31px;
+  width: 266px;
+  left: 39px;
+  top: 62px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.submit-text .morelink a:before {
+  content: "Submit Text";
+}
+
+.submit-link .morelink a:before {
+  content: "Submit Link";
+}
+
+.side .md p a {
+  color: #4a90e2;
+}
+
+.side .md p a:hover {
+  color: #356fb3;
+  text-decoration: underline;
+}
+
+.side .md p a[href="http://nano.co/en/about/"], .side .md p a[href="http://nano.co/en/explore/"], .side .md p a[href="http://nano.co/en/team/"] {
+  position: absolute;
+  top: 62px;
+  right: 60%;
+  font-size: 17px;
+  z-index: 999;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.side .md p a[href="http://nano.co/en/explore/"] {
+  margin-right: -90px;
+}
+
+.side .md p a[href="http://nano.co/en/team/"] {
+  margin-right: -162px;
+}
+
+.side .md p a[href="http://nano.co/en/about/"]:hover, .side .md p a[href="http://nano.co/en/explore/"]:hover, .side .md p a[href="http://nano.co/en/team/"]:hover {
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.side .md p a[href="https://chat.nano.org/"] {
+  background-image: url(%%discord%%);
+  position: absolute;
+  top: 55px;
+  right: 5%;
+  width: 32px;
+  height: 32px;
+  color: transparent;
+  margin-right: -45px;
+  opacity: 0.3;
+  z-index: 999;
+}
+
+.side .md p a[href="https://twitter.com/nanocurrency"] {
+  background-image: url(%%twitter%%);
+  position: absolute;
+  top: 55px;
+  right: 5%;
+  width: 32px;
+  height: 32px;
+  color: transparent;
+  opacity: 0.3;
+  z-index: 999;
+}
+
+.side .md p a[href="https://twitter.com/nanocurrency"]:hover, .side .md p a[href="https://chat.nano.org/"]:hover {
+  opacity: 1;
+}
+
+.side .md p a[href="#price"] {
+  position: absolute;
+  top: 67px;
+  right: 60%;
+  font-size: 17px;
+  z-index: 999;
+  margin-right: -275px;
+  color: #4a90e2;
+  border-left: 1px solid #C2C8CD;
+  padding-left: 11px;
+  pointer-events: none;
+}
+
+.side .md p a {
+  transition: all .3s ease-out;
+}
+
+.side .md p a[href="#priceinbtc"] {
+  position: absolute;
+  top: 68px;
+  right: 60%;
+  font-size: 12px;
+  z-index: 999;
+  margin-right: -433px;
+  color: #929292;
+  opacity: 0.2;
+  padding-left: 11px;
+}
+
+.side .md p a[href="#priceinbtc"]:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.side .md p a[href="#priceinbtc"]:active {
+  pointer-events: none;
+}
+
+.side .md p a[href="#priceinbtc"]:after {
+  content: "BTC";
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  z-index: 999;
+  margin-left: -41px;
+  padding-left: 11px;
+  font-size: 9px;
+  color: #929292;
+}
+
+.side .md p a[href="#lastupdate"] {
+  position: absolute;
+  top: 87px;
+  right: 60%;
+  font-size: 9px;
+  z-index: 999;
+  color: #d8d8d8;
+  opacity: 0.2;
+  margin-right: -450px;
+}
+
+.side .md p a[href="#lastupdate"]:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.side .md p a[href="#lastupdate"]:active {
+  pointer-events: none;
+}
+
+.side .md p a[href="#pricechange"] {
+  position: absolute;
+  top: 68px;
+  right: 60%;
+  margin-right: -368px;
+  color: #929292;
+  opacity: 0.2;
+  z-index: 999;
+}
+
+.side .md p a[href="#pricechange"]:after {
+  content: "24h";
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  z-index: 999;
+  margin-left: -41px;
+  padding-left: 11px;
+  font-size: 9px;
+  color: #929292;
+}
+
+.side .md p a[href="#pricechange"]:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.side .md p a[href="#pricechange"]:active {
+  pointer-events: none;
+}
+
+.side .md p a[href="#pricechangeunit"] {
+  display: none;
+}
+
+/* POSITIVE INDICATORS */
+
+.side .md p a[href="#pricechangeindicator1"], .side .md p a[href="#pricechangeindicator2"], .side .md p a[href="#pricechangeindicator3"], .side .md p a[href="#pricechangeindicator4"], .side .md p a[href="#pricechangeindicator5"], .side .md p a[href="#pricechangeindicator6"] {
+  background-image: url(%%greentriangle%%);
+  position: absolute;
+  right: 60%;
+  margin-right: -286px;
+  width: 6px;
+}
+
+.side .md p a[href="#pricechangeindicator1"], .side .md p a[href="#pricechangeindicator2"] {
+  top: 70px;
+  height: 5px;
+}
+
+.side .md p a[href="#pricechangeindicator3"], .side .md p a[href="#pricechangeindicator4"] {
+  top: 68px;
+  height: 13px;
+}
+
+.side .md p a[href="#pricechangeindicator5"], .side .md p a[href="#pricechangeindicator5"] {
+  top: 65px;
+  height: 18px;
+}
+
+.side .md p a[href="#pricechangeindicator1"] {
+  opacity: 0.4
+}
+
+.side .md p a[href="#pricechangeindicator2"] {
+  opacity: 0.8
+}
+
+.side .md p a[href="#pricechangeindicator3"] {
+  opacity: 0.4
+}
+
+.side .md p a[href="#pricechangeindicator4"] {
+  opacity: 0.8
+}
+
+.side .md p a[href="#pricechangeindicator5"] {
+  opacity: 0.4
+}
+
+.side .md p a[href="#pricechangeindicator6"] {
+  opacity: 0.8
+}
+
+/* NEGATIVE INDICATORS */
+
+.side .md p a[href="#pricechangeindicatorm1"], .side .md p a[href="#pricechangeindicatorm2"], .side .md p a[href="#pricechangeindicatorm3"], .side .md p a[href="#pricechangeindicatorm4"], .side .md p a[href="#pricechangeindicatorm5"], .side .md p a[href="#pricechangeindicatorm6"] {
+  background-image: url(%%redtriangle%%);
+  position: absolute;
+  right: 60%;
+  margin-right: -286px;
+  width: 6px;
+}
+
+.side .md p a[href="#pricechangeindicatorm1"], .side .md p a[href="#pricechangeindicatorm2"] {
+  top: 70px;
+  height: 5px;
+}
+
+.side .md p a[href="#pricechangeindicatorm3"], .side .md p a[href="#pricechangeindicatorm4"] {
+  top: 68px;
+  height: 13px;
+}
+
+.side .md p a[href="#pricechangeindicatorm5"], .side .md p a[href="#pricechangeindicatorm5"] {
+  top: 65px;
+  height: 18px;
+}
+
+.side .md p a[href="#pricechangeindicatorm1"] {
+  opacity: 0.4
+}
+
+.side .md p a[href="#pricechangeindicatorm2"] {
+  opacity: 0.8
+}
+
+.side .md p a[href="#pricechangeindicatorm3"] {
+  opacity: 0.4
+}
+
+.side .md p a[href="#pricechangeindicatorm4"] {
+  opacity: 0.8
+}
+
+.side .md p a[href="#pricechangeindicatorm5"] {
+  opacity: 0.4
+}
+
+.side .md p a[href="#pricechangeindicatorm6"] {
+  opacity: 0.8
+}
+
+/*
+
+
+
+  */
+
+/* nano main */
+
+body, html {
+  margin: 0
+}
+
+body {
+  display: flex;
+  background: #fbfbfb61;
+  color: #191a23;
+  flex-flow: row wrap;
+  font-family: Lato, Arial, sans-serif;
+}
+
+body>.content .link .midcol, .midcol-spacer {
+  width: 6.1ex !important;
+}
+
+.content, .side {
+  box-sizing: border-box;
+  padding: 12px;
+  background: #fff
+}
+
+.content .content {
+  margin: 0;
+  padding: 0;
+  border: none
+}
+.submit-page .content .content{
+    padding: 0;
+    border: none;
+    width: 525px;
+    margin: 0 auto;
+}
+.submit-page>.content>h1{
+  text-align: center;
+  font-size: 3em;
+  margin: 25px;
+}
+.md hr {
+  margin: 12px 0;
+  height: 1px;
+  background-color: #ebebeb
+}
+
+body.with-listing-chooser .listing-chooser, body.with-listing-chooser.listing-chooser-collapsed.listing-chooser {
+  top: 40px;
+  z-index: 5
+}
+
+body.with-listing-chooser #header .pagename {
+  position: relative;
+  bottom: initial;
+  margin-right: 6px
+}
+
+body.with-listing-chooser .side {
+  margin-right: 0!important
+}
+input[type=password], input[type=text], textarea {
+  box-sizing: border-box;
+  padding: 6px 12px!important;
+  border: 1px solid #ebebeb!important;
+  background: #fff!important;
+  color: #191a23!important
+}
+
+input[type=password]:focus, input[type=text]:focus, textarea:focus {
+  outline: 0;
+  border-color: #3d3d3d!important
+}
+
+.btn, [href^="#btn"]+a, [href^="#btn"]+span+a, [href^="#obtn"]+a, [href^="#obtn"]+span+a {
+  padding: 6px 12px
+}
+
+.sidebox.create {
+  clear: both
+}
+
+.sidebox.create .spacer {
+  display: none
+}
+
+.comment .midcol {
+  margin-left: 0px;
+  width: 25px;
+}
+
+.morelink {
+  border: none;
+  background-image: none!important
+}
+
+[href^="#btn"]+a, [href^="#btn"]+span+a, [href^="#obtn"]+a, [href^="#obtn"]+span+a {
+  display: inline-block;
+  font-size: 11px
+}
+
+[href^="#btn"]+a, [href^="#btn"]+span+a {
+  background: #3d3d3d;
+  color: #fff!important
+}
+
+.btn, .morelink a, [href^="#obtn"], button {
+  background: 0 0;
+  color: #3d3d3d!important
+}
+
+[href$="-f"]+a, [href$="-f"]+span+a {
+  width: 100%;
+  text-align: center
+}
+
+.btn, .fancy-toggle-button .option, .fancy-toggle-button .option.active, .morelink a, .res-fancy-toggle-button, [href^="#btn"]+a, [href^="#btn"]+span+a, [href^="#obtn"]+a, [href^="#obtn"]+span+a, button {
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.3pt;
+  font-weight: 600;
+  background: #fbfbfb;
+}
+
+.btn:hover, .fancy-toggle-button .option.active:hover, .fancy-toggle-button .option:hover, .morelink a:hover, .res-fancy-toggle-button:hover, [href^="#btn"]+a:hover, [href^="#btn"]+span+a:hover, [href^="#obtn"]+a:hover, [href^="#obtn"]+span+a:hover, button:hover {
+  opacity: .8
+}
+
+.content[href^="#btn"]:not([href$="-f"])+a, .content[href^="#btn"]:not([href$="-f"])+span+a, .content[href^="#obtn"]:not([href$="-f"])+a, .content[href^="#obtn"]:not([href$="-f"])+span+a {
+  margin: 0 10px
+}
+
+.content[href="#btn-f"]+a, .content[href="#btn-f"]+span+a, .content[href="#obtn-f"]+a, .content[href="#obtn-f"]+span+a {
+  margin: 10px 0
+}
+
+#header {
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom-color: #ebebeb;
+  background-color: transparent;
+  order: 0
+}
+
+/*#header:after {
+  background-image: url(%%bg%%);
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  color: #a3a3a7;
+  content: " ";
+  position: absolute;
+  top: 24px;
+  right: 12px;
+  width: 151px;
+  height: 128px;
+  background-repeat: no-repeat;
+}*/
+
+#header-bottom-left, #header-bottom-right, #sr-header-area, #sr-more-link {
+  border: none
+}
+
+#header-bottom-left {
+  padding: 12px;
+  background: #fbfbfb61;
+  line-height: 1;
+  margin-top: 115px;
+  z-index: 5;
+}
+
+#header-bottom-right {
+  padding: 5px;
+  background: transparent;
+  color: #191a23;
+  line-height: 1;
+  z-index: 5;
+  top: 0;
+  height: 11px;
+  border-radius: 0;
+}
+
+#header-img {
+  height: 25px;
+  width: auto;
+  margin: -12px 0 -6px
+}
+
+#header-img.default-header {
+  margin: 0 -4px 0 0;
+  width: auto;
+  height: auto;
+  background-image: none;
+  text-indent: 0;
+  font-size: 0;
+  display: none;
+}
+
+#header-img:after {
+  display: inline-block;
+  content: "r/"" ";
+  font-weight: 700;
+  font-size: 16px
+}
+
+.redditname {
+  font-size: 0;
+}
+
+.redditname a {
+  letter-spacing: 0;
+  font-variant: normal;
+  font-size: 16px
+}
+
+.pagename a {
+  opacity: 1;
+  position: absolute;
+  opacity: 0;
+  height: 40px;
+  width: 195px;
+  top: 53px;
+  left: 38px;
+}
+
+#sr-header-area {
+  left: 0;
+  right: 320px;
+  top: 0px;
+  overflow: visible;
+  position: absolute;
+  box-sizing: border-box;
+  color: #fff;
+  transition: all .2s ease;
+  background: transparent;
+  font-size: 9px;
+  z-index: 109;
+  opacity: 0.3;
+}
+
+#sr-header-area:hover {
+  opacity: 1;
+}
+
+#sr-header-area a {
+  color: #505050;
+  font-weight: 500;
+}
+
+#sr-header-area .selected a {
+  color: #4a90e2;
+}
+
+#sr-header-area .drop-choices a {
+  color: #3d3d3d
+}
+
+.drop-choices {
+  position: absolute;
+  border: 1px solid #80808045;
+  z-index: 100;
+  background-color: #fbfbfb;
+  white-space: nowrap;
+  line-height: normal;
+  margin-top: 1px;
+  display: none;
+}
+
+.dropdown.srdrop .selected {
+  padding-right: 5px;
+  background-image: none;
+  color: #505050;
+  font-weight: 500;
+}
+
+#sr-more-link {
+  background: #ffffff;
+}
+
+#header .tabmenu {
+  z-index: 105;
+  position: absolute;
+  margin: -1px 0 0 0px
+}
+
+.tabmenu {
+  margin: 0
+}
+
+.tabmenu, .tabmenu a, .tabmenu li {
+  display: inline-block;
+  box-sizing: border-box
+}
+
+.tabmenu li {
+  margin: 0 1px;
+  border: none;
+}
+
+.tabmenu li a {
+  padding: 4px 5px 4px 7px;
+  margin-bottom: -3px;
+  color: #a3a3a7;
+  background: 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 12px
+}
+
+.tabmenu li:hover a {
+  color: #4a90e2;
+}
+
+.tabmenu li.selected a {
+  border: none;
+  color: #4a90e2;
+  background: transparent;
+  font-weight: normal;
+}
+.tabmenu.formtab li {
+    margin: 0;
+    width: 50%;
+    text-align: center;
+    height: 46px;
+    line-height: 45px;
+}
+.tabmenu.formtab li.selected{
+      background: #4a90e2;
+}
+.tabmenu.formtab li.selected a{
+      color: #fff;
+}
+.listing-page .tabmenu li>a[href$="/controversial/"], .wiki-page .tabmenu li>a[href$="/controversial/"], .listing-page .tabmenu li>a[href$="/ads/"], .wiki-page .tabmenu li>a[href$="/ads/"] {
+  display: none!important;
+}
+
+body>.content {
+  margin: 150px 0 0!important;
+  border-right-color: #fff;
+  order: 1;
+  flex: 0 1 calc(100% - 300px)
+}
+
+#preview-table table, #subreddit_stylesheet>div {
+  width: 100%
+}
+
+.md a {
+  color: #3d3d3d
+}
+
+.search-result-meta .stickied-tagline, .tagline .stickied-tagline, .thing.stickied.link a.title {
+  color: #399b76
+}
+
+.gold-accent {
+  border-color: #ead340;
+  border-radius: 3px;
+  background-color: #fff
+}
+
+.thing .md .expando-button {
+  position: relative;
+  margin: 0 4px
+}
+
+.content>.tabpane-content, .formtabs-content {
+  padding-top: 12px;
+  border: 2px solid transparent;
+  border-top-color: #3d3d3d
+}
+ul.tabmenu.formtab{
+  padding-left: 0;
+}
+.content>.tabmenu:hover, ul.tabmenu.formtab:hover {
+  border: none;
+  background: 0 0
+}
+
+.content>.tabmenu a, ul.tabmenu.formtab a {
+  border: none;
+  font-size: 19px!important;
+  width: 100%;
+  height: 100%;
+}
+
+.content>.tabmenu li a:hover .content>.tabmenu .selected a, .tabmenu.formtab .selected a, ul.formtab li a:hover {
+  background-color: transparent
+}
+
+.linefield, .roundfield {
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 0;
+  background-color: #fdfdfd
+}
+
+.submit-page #reddit-field {
+  display: none
+}
+
+.submit-page #suggest-title {
+  margin-top: 6px
+}
+
+.submit-page #items-required {
+  font-size: 0
+}
+
+.fancy-settings h1 {
+  margin: 12px 0
+}
+
+.usertable {
+  margin: 0
+}
+
+.flaircell, .flairlist .header {
+  margin-right: 0
+}
+
+.content>.menuarea {
+  border: none;
+  background: #fbfbfb;
+  color: #a3a3a7;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.content>.menuarea .dropdown.lightdrop .selected, .content>.menuarea .flat-list .selected a, .content>.menuarea .flat-list a {
+  color: #4a90e2;
+}
+
+.sheets .btn, .sheets label {
+  margin-top: 4px;
+  padding: 4px 8px;
+  font-size: 10px
+}
+
+#image-upload #file, #image-upload #sumbit-img {
+  margin: 10px 0
+}
+
+#image-upload label input {
+  margin: 2px 5px
+}
+
+ul.image-list {
+  font-size: 13px
+}
+
+.thing {
+  margin-bottom: 6px;
+  padding: 12px 0;
+  position: relative;
+  border-bottom: 1px solid #f2f2f2
+}
+
+.domain, .domain a, .entry .buttons li a, .redditSingleClick:after, .search-result-meta, .tagline {
+  font-size: 13px;
+  font-weight: 400;
+  color: #a3a3a7
+}
+
+.domain a:hover, .entry .buttons li a:hover {
+  color: #191a23
+}
+
+.entry .buttons li .comments {
+  color: #3d3d3d
+}
+
+.infobar, .reddit-infobar {
+  border: none;
+  background-color: transparent
+}
+.infobar{
+      font-size: 1.5em;
+}
+.reddit-infobar .md p {
+  margin-top: -3px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ead340;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 13px
+}
+
+.reddit-infobar.with-icon:before {
+  width: 41px;
+  height: 41px;
+  border-radius: 100%;
+  background-color: #ead340
+}
+
+.thing .title, .thing .title:hover {
+  font-size: 17px;
+  color: #3d3d3d;
+  margin-bottom: 6px
+}
+
+.thing .title:visited, .thing.visited .source-url, .thing.visited .title {
+  color: #a3a3a7
+}
+
+.thing .thumbnail img {
+  height: auto!important;
+  width: 80px!important
+}
+
+.thing .thumbnail {
+  margin: 0 12px 0 0;
+  width: 80px;
+  height: 60px!important;
+  border-radius: 3px;
+  background: #f1f1f1;
+  display: none;
+}
+
+.thing .thumbnail:after {
+  position: absolute;
+  display: block;
+  width: 79px;
+  height: 60px;
+  color: #191a23;
+  text-align: center;
+  font-size: 11px;
+  line-height: 60px
+}
+
+.thing.over18 .thumbnail {
+  color: #fff;
+  background: #d86a62
+}
+
+.thing.self .thumbnail:after {
+  content: "self"
+}
+
+.thing.locked .thumbnail:after {
+  content: "locked"
+}
+
+.thing.over18 .thumbnail:after {
+  content: "nsfw"
+}
+
+.thing.locked .thumbnail img {
+  opacity: .5
+}
+
+.thing.over18 .thumbnail img {
+  display: none
+}
+
+.nsfw-stamp {
+  color: #d86a62;
+  margin: 3px -3px 0 0
+}
+
+.thing .expando-button {
+  width: 16px;
+  height: 15px;
+  border: none;
+  border-radius: 0px;
+  color: #4a90e2;
+  background: #f1f1f1;
+  background-image: none!important;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: -3px;
+}
+
+.thing .expando-button:hover {
+  background: #eaeaea;
+}
+
+.thing .expando-button.expanded {
+  line-height: 15px;
+  background: #eaeaea;
+  color: #e2494a;
+}
+
+.thing .expando-button.expanded:before {
+  background-image: url(%%menunanoclose%%);
+  height: 5px;
+  width: 8px;
+  position: absolute;
+  margin-left: -4px;
+  margin-top: 5px;
+}
+
+.thing .expando-button:before {
+  background-image: url(%%seemoretext%%);
+  height: 5px;
+  width: 8px;
+  position: absolute;
+  margin-left: -4px;
+  margin-top: 5px;
+  opacity: 0.4;
+}
+.expando-button.video:before {
+  background-image: url(%%videoarrow%%);
+  height: 8px;
+  width: 7px;
+  position: absolute;
+  margin-left: -3px;
+  margin-top: 4px;
+  opacity: 0.4;
+}
+.gadget .midcol {
+  width: 30px;
+  margin: 0;
+}
+
+.thing .expando-button.expanded:before {
+  content: " "!important
+}
+
+.thing .expando-button:not(.expanded):before {
+  content: " "!important
+}
+
+.arrow {
+  margin: 0 auto;
+  background-image: none!important;
+  color: #d0d0d0;
+  text-align: center;
+  font-size: 15px;
+  height: 22px;
+  width: 25px;
+  display: block;
+  cursor: pointer;
+  outline: none;
+}
+
+.arrow:hover {
+  background: #f7f7f7;
+}
+
+.arrow.up:before {
+  content: " ";
+  background-image: url(%%arrow%%);
+  width: 13px;
+  height: 10px;
+  position: absolute;
+  margin-left: -7px;
+  margin-top: 4px;
+  opacity: 0.3;
+}
+
+.arrow.down:before {
+  content: " ";
+  background-image: url(%%arrow%%);
+  width: 13px;
+  height: 10px;
+  position: absolute;
+  margin-left: -6px;
+  margin-top: 4px;
+  opacity: 0.3;
+  transform: rotate(180deg);
+}
+
+.arrow.upmod:before {
+  content: " ";
+  background-image: url(%%arrowblue%%);
+  width: 13px;
+  height: 10px;
+  position: absolute;
+  margin-left: -7px;
+  margin-top: 4px;
+}
+
+.arrow.downmod:before {
+  content: " ";
+  background-image: url(%%arrowred%%);
+  width: 13px;
+  height: 10px;
+  position: absolute;
+  margin-left: -6px;
+  margin-top: 4px;
+  transform: rotate(180deg);
+}
+
+.arrow.down:after {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  margin: -6px 0 0 32px;
+  padding: 12px;
+  background: rgba(79, 77, 192, 0.0);
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0);
+  content: "For content that does not contribute to any discussion.";
+  text-align: center;
+  letter-spacing: 0.1pt;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all .25s ease;
+  pointer-events: none;
+}
+
+.arrow.down:hover:after {
+  visibility: visible;
+  background: rgb(251, 251, 251);
+  color: #4a90e2;
+  margin-left: 48px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 1px 2px 5px #0000003b;
+}
+
+.arrow.upmod {
+  color: #4a90e2;
+}
+
+body>.content .rank {
+  display: none;
+}
+
+.score {
+  padding: 3px;
+  line-height: 1.3
+}
+
+.link .score.likes {
+  color: #4a90e2
+}
+
+.arrow.downmod, .link .score.dislikes {
+  color: #e24a4a
+}
+
+.link.last-clicked {
+  border-color: transparent #3d3d3d transparent transparent
+}
+
+.link .usertext-body .md {
+  border: none;
+  border-radius: 0;
+  background-color: #fff!important
+}
+
+.link .usertext .md {
+  color: #292f34;
+  padding-left: 0px;
+}
+
+.commentarea .menuarea, .panestack-title {
+  margin: 0;
+  padding: 12px;
+  border-color: #ebebeb
+}
+
+.panestack-title {
+  margin-top: 12px
+}
+
+.comment .md {
+  color: #191a23
+}
+
+.commentarea .menuarea .toggle a {
+  color: #a3a3a7
+}
+
+.gold-accent.comment-visits-box {
+  border-width: 0;
+  margin: 12px 10px 24px;
+  border-bottom-width: 3px;
+  color: #000
+}
+
+.new-comment .usertext-body {
+  border-color: transparent;
+  background-color: transparent
+}
+
+.new-comment .tagline:after {
+  display: inline-block;
+  color: #3d3d3d;
+  content: "new comment"
+}
+
+.thing.comment.stickied {
+  border-left: 3px solid #399b76!important
+}
+
+.flair, .linkflairlabel {
+  padding: 2px 4px;
+  font-size: 11px;
+  border-color: #fff;
+  background-color: #3d3d3d;
+  color: #fff;
+  vertical-align: bottom
+}
+
+.linkflair-red .linkflairlabel {
+  background-color: #d86a62
+}
+
+.linkflair-green .linkflairlabel {
+  background-color: #399b76
+}
+
+.tagline .flair {
+  margin-bottom: -3px;
+  vertical-align: bottom
+}
+
+.tagline {
+  margin-bottom: 6px;
+}
+
+.thing:not(.stickied):not(:hover) .linkflairlabel {
+  opacity: .5
+}
+
+.flairselector.drop-choices.active {
+  box-shadow: none;
+  padding: 12px 4px!important;
+  border: 1px solid #ebebeb
+}
+
+.flairselector.drop-choices.active h2 {
+  color: #191a23;
+  margin-bottom: 4px;
+  background: 0 0
+}
+
+.footer {
+  padding: 0;
+}
+
+.footer-parent {
+  width: 100%;
+  background: #fbfbfb;
+  border-top: 1px solid #ebebeb;
+  order: 3;
+  position: relative;
+  padding-top: 0;
+}
+
+.footer-parent:after {
+  content: " ";
+  position: absolute;
+  bottom: 280px;
+  height: 268px;
+  width: 610px;
+  background-repeat: no-repeat;
+  left: 50%;
+  margin-left: 30px;
+  opacity: 0.2;
+  z-index: 999;
+  background-image: url(%%bg-logo-dark%%);
+}
+
+.footer-parent a {
+  font-size: 13px
+}
+
+.footer-parent .bottommenu {
+  font-size: 10px;
+  color: #a3a3a7
+}
+
+.footer-parent .bottommenu:first-of-type {
+  margin-top: 24px
+}
+
+.footer-parent .bottommenu:last-of-type {
+  margin-bottom: 24px
+}
+
+.footer, .footer .col {
+  border: 0
+}
+
+#hsts_pixel, .debuginfo {
+  order: 4
+}
+
+.side {
+  margin: 152px 0 0;
+  width: 300px;
+  border-left: 1px solid #ebebeb;
+  order: 2
+}
+
+.side .md {
+  color: #191a23
+}
+.side:before {
+  content: " ";
+  background-image: url(%%sidebar%%);
+width: 100%;
+display: block;
+margin: 5px 0;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: top center;
+height: 206px;
+}
+
+.sidecontentbox .more a, .sidecontentbox .title h1, .titlebox .bottom {
+  color: #a3a3a7
+}
+
+.sidecontentbox .title h1 {
+  text-transform: uppercase;
+  font-weight: 700
+}
+
+.account-activity-box a, .create .morelink a, .sidecontentbox .title h1, .sidecontentbox a {
+  font-size: 11px
+}
+
+.side .icon-menu a, .titlebox form.toggle {
+  background: 0 0
+}
+
+.login-form-side {
+  border: none;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ebebeb
+}
+
+.login-form-side input[type=password], .login-form-side input[type=text] {
+  margin: 0 0 5px;
+  width: calc(275px)
+}
+
+.linkinfo {
+  padding: 12px;
+  border-radius: 0;
+  color: #3d3d3d;
+  border: 1px solid #3d3d3d;
+  background-color: #fff
+}
+
+.linkinfo .date, .linkinfo .shortlink {
+  font-size: 11px
+}
+
+.sidebox.create {
+  margin: 24px 0 26px
+}
+
+.sidecontentbox {
+  margin-bottom: 24px
+}
+
+.sidecontentbox .title {
+  margin-bottom: 12px
+}
+
+.sidecontentbox .collapse-button {
+  border-color: transparent;
+  background: 0 0;
+  font-size: 0;
+  line-height: 7px
+}
+
+.sidecontentbox .collapse-button:before {
+  content: "[-]";
+  font-size: 11px
+}
+
+.sidecontentbox .content {
+  padding: 0;
+  border: none
+}
+
+#moderation_tools .title h1 {
+  font-size: 0
+}
+
+#moderation_tools .title h1:before {
+  content: "Mod Tools";
+  text-transform: capitalize;
+  font-size: 11px
+}
+
+.titlebox .bottom {
+  padding-bottom: 12px;
+  font-size: 11px;
+  border-top-color: #ebebeb
+}
+
+#search {
+  margin-top: -6px
+}
+
+#search input[type=text] {
+  width: 100%;
+  border-color: transparent transparent #ebebeb!important
+}
+
+#search input[type=text]::placeholder {
+  color: #ebebeb;
+  text-transform: capitalize
+}
+
+#search input[type=text]:focus::placeholder, #search input[type=text]:hover::placeholder {
+  color: #a3a3a7
+}
+
+#search input[type=submit] {
+  opacity: .6
+}
+
+#search:not(:hover) input[type=submit] {
+  opacity: .2
+}
+
+.leavemoderator, .side .nub, form.leavecontributor-button, span.multi-count {
+  display: none!important
+}
+
+.submit-link .morelink, .submit-text .morelink {
+  margin-bottom: 6px;
+  border: none;
+  background: 0 0;
+  font-size: 0
+}
+
+.submit-link .morelink a:before, .submit-text .morelink a:before {
+  display: inline;
+  font-size: 15px
+}
+
+.morelink:hover a {
+  color: #3d3d3d
+}
+
+.titlebox .redditname {
+  margin-bottom: -4px
+}
+
+.titlebox .redditname a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #3d3d3d
+}
+
+.titlebox .redditname a:before {
+  content: "r/";
+  font-size: 16px
+}
+
+.fancy-toggle-button {
+  padding: 8px 0;
+  padding: .5rem 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0
+}
+
+.fancy-toggle-button .option.active {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0;
+  font-size: 11px
+}
+
+.fancy-toggle-button .remove {
+  border-color: #ebebeb!important;
+  background: #ebebeb;
+  color: #191a23
+}
+
+.fancy-toggle-button .add {
+  border-color: #3d3d3d;
+  background: #3d3d3d;
+  color: #fff
+}
+
+.side .usertext-body {
+  margin-top: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #ebebeb
+}
+
+hr+hr {
+  display: none
+}
+
+hr+hr+p {
+  text-align: center
+}
+
+.subscribers, .users-online {
+  color: #3d3d3d;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 11px
+}
+
+.subscribers .word, .titlebox .leavemoderator:before, .titlebox form.leavecontributor-button:before, .users-online .word, .users-online:before {
+  display: none
+}
+
+.leavemoderator, .subscribers {
+  float: right
+}
+
+.subscribers:after, .users-online:after {
+  display: inline
+}
+
+.subscribers:after {
+  content: "Users"
+}
+
+.users-online:after {
+  content: "Browsing"
+}
+
+.leavecontributor-button, .leavemoderator {
+  display: inline-block;
+  margin-bottom: 6px
+}
+
+.leavecontributor-button .option, .leavemoderator {
+  font-size: 0
+}
+
+.leavecontributor-button .option a, .leavemoderator a {
+  font-size: 11px
+}
+
+.leavemoderator a:before {
+  content: "Mod ("
+}
+
+.leavecontributor-button .no, .leavecontributor-button .yes {
+  padding-right: 10px
+}
+
+.leavecontributor-button .option .togglebutton:before {
+  content: "Approved ("
+}
+
+.leavecontributor-button .option .togglebutton:after, .leavemoderator a:after {
+  content: ")"
+}
+
+.titlebox form.flairtoggle {
+  margin-top: 10px;
+  margin-bottom: -16px;
+  font-size: 0
+}
+
+.titlebox form.flairtoggle label:after {
+  content: "Flair: ";
+  font-size: 11px;
+  vertical-align: bottom
+}
+
+.flairtoggle+.tagline {
+  margin: 0;
+  text-align: right
+}
+
+.res-navTop #header-bottom-right {
+  margin-bottom: -3px
+}
+
+#RESShortcutsAdd, #RESShortcutsEditContainer, #RESShortcutsLeft, #RESShortcutsRight, #RESShortcutsSort {
+  font-size: 10px;
+  text-align: center;
+  background: 0 0;
+  color: #fff
+}
+
+#RESShortcutsEditContainer {
+  margin: 1px 7px 0 0
+}
+
+#RESShortcutsEditContainer .res-icon {
+  font-size: 10px
+}
+
+.titlebox .toggle.res-sr-style-toggle {
+  font-size: 10px;
+  margin-bottom: -5px
+}
+
+.res-fancy-toggle-button {
+  margin: 0 0 15px;
+  padding: 6px 24px;
+  border-color: #ebebeb;
+  border-radius: 0;
+  background: 0 0;
+  color: #191a23
+}
+
+.res-fancy-toggle-button.remove, .res-fancy-toggle-button:hover {
+  background: #ebebeb;
+  background-image: none
+}
+
+.RESDashboardToggle {
+  float: right
+}
+
+.res .RES-keyNav-activeElement, .res .RES-keyNav-activeElement .md-container, .res .commentarea .RES-keyNav-activeElement .md, .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed, .res .entry.res-selected, .res .entry.res-selected .md-container {
+  background-color: transparent!important
+}
+
+.entry.RES-keyNav-activeElement {
+  border-right: 1px solid #3d3d3d
+}
+
+.res-show-link {
+  top: auto!important;
+  bottom: 0
+}
+
+.RESHoverTitle .fancy-toggle-button {
+  margin: 0;
+  padding: 0;
+  width: auto
+}
+
+.res-userHighlight .entry .tagline .author.moderator {
+  padding: 0 2px;
+  color: #fff!important;
+  background-color: #399b76!important
+}
+
+#progressIndicator.neverEndingReddit, .NERPageMarker {
+  color: #a3a3a7;
+  background: #f2f2f2;
+  border-color: #ebebeb
+}
+
+#progressIndicator.neverEndingReddit .gearIcon, .NERPageMarker .gearIcon {
+  opacity: .3
+}
+
+#NREFloat {
+  top: 65px!important;
+  display: block!important
+}
+
+#NREFloat a:not(.pageNavigator) {
+  display: none
+}
+
+.res-nightmode #RESShortcutsEditContainer *, .res-nightmode #header-bottom-left, .res-nightmode #sr-header-area, .res-nightmode .fancy-toggle-button .remove {
+  background: #333!important
+}
+
+.res-nightmode #header-bottom-left a {
+  color: #fff!important
+}
+
+.res-nightmode .tabmenu a {
+  border-color: transparent!important
+}
+
+.res-nightmode .tabmenu li a:hover {
+  background: #000!important
+}
+
+.res-nightmode #header, .res-nightmode .side .usertext-body, .res-nightmode .thing, .res-nightmode .titlebox .bottom {
+  border-color: #3c3c3c!important
+}
+
+.res-nightmode .link .usertext-body .md {
+  background-color: transparent!important
+}
+
+/* nano by gr44b plugins */
+
+@-webkit-keyframes backgroundScroll {
+  from {
+    background-position: center center
+  }
+  to {
+    background-position: -3000px 0
+  }
+}
+
+@keyframes backgroundScroll {
+  from {
+    background-position: center center
+  }
+  to {
+    background-position: -3000px 0
+  }
+}
+
+.submit-link, .submit-text {
+  width: 47.5%;
+  box-sizing: border-box
+}
+
+.submit-link {
+  float: left
+}
+
+.submit-text {
+  float: right
+}
+
+@media (max-width:950px) {
+  .side .md p a[href="https://twitter.com/nanocurrency"], .side .md p a[href="https://chat.nano.org/"] {
+    display: none;
+  }
+}
+
+@media (max-width:720px) {
+  .side .md p a[href="http://nano.co/en/about/"], .side .md p a[href="http://nano.co/en/explore/"], .side .md p a[href="http://nano.co/en/team/"] {
+    display: none;
+  }
+  .side .md p a[href="#price"], .side .md p a[href="#pricechange"], .side .md p a[href="#priceinbtc"], .side .md p a[href="#lastupdate"], .side .md p a[href="#price"], .side .md p a[href="#pricechangeindicatorm1"], .side .md p a[href="#pricechangeindicatorm2"], .side .md p a[href="#pricechangeindicatorm3"], .side .md p a[href="#pricechangeindicatorm4"], .side .md p a[href="#pricechangeindicatorm5"], .side .md p a[href="#pricechangeindicatorm6"], .side .md p a[href="#pricechangeindicator1"], .side .md p a[href="#pricechangeindicator2"], .side .md p a[href="#pricechangeindicator3"], .side .md p a[href="#pricechangeindicator4"], .side .md p a[href="#pricechangeindicator5"], .side .md p a[href="#pricechangeindicator6"] {
+    right: 94%;
+  }
+}
