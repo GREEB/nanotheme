@@ -209,7 +209,7 @@
   height: 13px;
 }
 
-.side .md p a[href="#pricechangeindicator5"], .side .md p a[href="#pricechangeindicator5"] {
+.side .md p a[href="#pricechangeindicator5"], .side .md p a[href="#pricechangeindicator6"] {
   top: 65px;
   height: 18px;
 }
@@ -258,7 +258,7 @@
   height: 13px;
 }
 
-.side .md p a[href="#pricechangeindicatorm5"], .side .md p a[href="#pricechangeindicatorm5"] {
+.side .md p a[href="#pricechangeindicatorm5"], .side .md p a[href="#pricechangeindicatorm6"] {
   top: 65px;
   height: 18px;
 }
@@ -409,7 +409,6 @@ input[type=password]:focus, input[type=text]:focus, textarea:focus {
 }
 
 .btn, .fancy-toggle-button .option, .fancy-toggle-button .option.active, .morelink a, .res-fancy-toggle-button, [href^="#btn"]+a, [href^="#btn"]+span+a, [href^="#obtn"]+a, [href^="#obtn"]+span+a, button {
-  box-sizing: border-box;
   border: 1px solid #e2e2e2;
   /* text-transform: uppercase; */
   letter-spacing: 0.3pt;
@@ -1361,7 +1360,10 @@ height: 206px;
   box-sizing: border-box;
   width: 100%;
   border-radius: 0;
-  font-size: 11px
+  font-size: 15px;
+  padding: 5px;
+  background: #4a90e2;
+  color: #fff;
 }
 
 .fancy-toggle-button .remove {
@@ -1373,7 +1375,7 @@ height: 206px;
 .fancy-toggle-button .add {
   border-color: #3d3d3d;
   background: #3d3d3d;
-  color: #fff
+  color: #3d3d3d;
 }
 
 .side .usertext-body {
@@ -1396,25 +1398,17 @@ hr+hr+p {
   font-weight: 700;
   font-size: 11px
 }
-
-.subscribers .word, .titlebox .leavemoderator:before, .titlebox form.leavecontributor-button:before, .users-online .word, .users-online:before {
-  display: none
-}
-
 .leavemoderator, .subscribers {
   float: right
 }
-
+.users-online:before{
+  display: none;
+}
+.gadget .score{
+  margin-left: 0;
+}
 .subscribers:after, .users-online:after {
   display: inline
-}
-
-.subscribers:after {
-  content: "Users"
-}
-
-.users-online:after {
-  content: "Browsing"
 }
 
 .leavecontributor-button, .leavemoderator {
